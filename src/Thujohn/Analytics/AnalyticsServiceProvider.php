@@ -54,7 +54,7 @@ class AnalyticsServiceProvider extends ServiceProvider {
 			return new Analytics($client);
 		});
 
-		$this->app->singleton('analytics', 'Thujohn\Analytics\Analytics');
+		$this->app->singleton('analytics2', 'Thujohn\Analytics\Analytics');
 	}
 
 	/**
@@ -64,7 +64,7 @@ class AnalyticsServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('analytics');
+		return array('analytics2');
 	}
 
 }
